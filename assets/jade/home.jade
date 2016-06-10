@@ -9,38 +9,41 @@ html(lang='es-PE')
     // HERO SECTION: 
     // COLUMNISTAS
     // DESTACADOS+ PUBLICIDAD
-    // ULTIMAS NOTICIAS
     .fondo-news
         .container
             .row
                 //ULTIMAS NOTICIAS
                 .col-md-8
-                    H4 ULTIMAS NOTICIAS
-                    i
-                        img(src="image/double-arrow-bottom.png")
-                    
+                    //Declarar mixins
                     mixin list-news(tiempo,titular,img,description,comment,seccion,media)
                         li
                             p=tiempo 
                             h4=titular
-                            img(src=img)
-                            p=description
-                            img(src="image/social_sprite.png")
-                            img(src="image/bullet.gif")
-                            img(src="image/ico_comment.png") 
-                            p=comment
-                            img(src="image/bullet.gif")
-                            a=seccion
-                            img(src="image/bullet.gif")
-                            i.fa&attributes(attributes)
+                            .col-md-4
+                                img(src=img)
+                            .col-md-8
+                                p=description
+                                img.d-ib(src="image/social_sprite.png")
+                                img.d-ib(src="image/bullet.gif")
+                                img.d-ib(src="image/ico_comment.png") 
+                                p.d-ib=comment
+                                img.d-ib(src="image/bullet.gif")
+                                a.d-ib=seccion
+                                img.d-ib(src="image/bullet.gif")
+                                i.d-ib.fa&attributes(attributes)
+
+                    H4 ULTIMAS NOTICIAS
+                    i
+                        img(src="image/double-arrow-bottom.png")
+                    
                     mixin rep-list-news
-                        +list-news("1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
+                        +list-news("Hace 1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
                         
-                        +list-news("1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("Hace 1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
 
-                        +list-news("1 hora 12 mins","YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
+                        +list-news("Hace 1 hora 12 mins","YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
 
-                        +list-news("1 hora 12 mins","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("Hace 1 hora 12 mins","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
                     ul
                         +rep-list-news
                         +rep-list-news
@@ -50,18 +53,44 @@ html(lang='es-PE')
                         +rep-list-news
 
                 .col-md-4
+                    //Declarar mixins ()
+                    mixin trama(img_superior,titulo)
+                        .fondo-trama
+                            img(src=img_superior)
+                            .container-blanco
+                                h3=titulo
+                                if block
+                                    block
+                                else
+                                    p a
 
+                    mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4)
+                        .img(src=img_superior)
+                        .row
+                            .col-md-5
+                                img(src=img_1)
+                                img(src=img_2)
+                                img(src=img_3)
+                                img(src=img_4)
+                            .col-md-7
+                                p=p_1
+                                p=p_2
+                                p=p_3
+                                p=p_4
+
+                    
+                    // SUSCRIBETE BOLETIN (L)
+                    +trama("image/img_sucribe.png","Suscribete a nuestro boletín")
+                        input
+                        button Suscribirse
+
+                    //AWEITA
+                    +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks")
 
     // SUSCRIBETE BOLETIN (L)
         //- L = fondo, imagen superior, div blanco, titulo
-    mixin trama(img_superior,titulo)
-        .fondo-trama
-            img(src=img_superior)
-            .container-blanco
-                h3=titulo
-    +trama("image/img_sucribe.png","<b>Suscribete</b> a nuestro boletín")
-        input
-        button Suscribirse
+    
+    
     // AWEITA (x)
         //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
     // FOTOS DESTACADAS
