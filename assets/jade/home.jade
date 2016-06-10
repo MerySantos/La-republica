@@ -10,7 +10,7 @@ html(lang='es-PE')
     // COLUMNISTAS
     // DESTACADOS+ PUBLICIDAD
     // ULTIMAS NOTICIAS
-    .fondo
+    .fondo-news
         .container
             .row
                 //ULTIMAS NOTICIAS
@@ -19,28 +19,28 @@ html(lang='es-PE')
                     i
                         img(src="image/double-arrow-bottom.png")
                     
-                    mixin list-news(titular,img,description,comment,seccion,media)
+                    mixin list-news(tiempo,titular,img,description,comment,seccion,media)
                         li
-                                p Hace 1 hora 12 mins
-                                h4=titular
-                                img(src=img)
-                                p=description
-                                img(src="image/social_sprite.png")
-                                img(src="image/bullet.gif")
-                                img(src="image/ico_comment.png") 
-                                p=comment
-                                img(src="image/bullet.gif")
-                                a=seccion
-                                img(src="image/bullet.gif")
-                                i.fa&attributes(attributes)
+                            p=tiempo 
+                            h4=titular
+                            img(src=img)
+                            p=description
+                            img(src="image/social_sprite.png")
+                            img(src="image/bullet.gif")
+                            img(src="image/ico_comment.png") 
+                            p=comment
+                            img(src="image/bullet.gif")
+                            a=seccion
+                            img(src="image/bullet.gif")
+                            i.fa&attributes(attributes)
                     mixin rep-list-news
-                            +list-news("Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
-                            
-                            +list-news("Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
+                        
+                        +list-news("1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
 
-                            +list-news("YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
+                        +list-news("1 hora 12 mins","YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
 
-                            +list-news("Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("1 hora 12 mins","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
                     ul
                         +rep-list-news
                         +rep-list-news
@@ -51,19 +51,35 @@ html(lang='es-PE')
 
                 .col-md-4
 
+
     // SUSCRIBETE BOLETIN (L)
-    // AWEITA
+        //- L = fondo, imagen superior, div blanco, titulo
+    mixin trama(img_superior,titulo)
+        .fondo-trama
+            img(src="")
+            .container-blanco
+                h3 título
+    // AWEITA (x)
+        //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
     // FOTOS DESTACADAS
-    // ESPECIALES
+    // ESPECIALES (y)
+        //- Y= imagen fondo, p con fondo y su texto
     // CARICATURA DEL DIA
     // NUESTROS BLOGGEROS
     // EDICION IMPRESA
-    // INFOGRAFIA
+    // INFOGRAFIA (y)
+        //- Y= imagen fondo, p con fondo y su texto
     // PREGUNTAS (L)
-    // LIBERO.PE
-    // POPULAR
-    // GUAPA
+        //- L = fondo, imagen superior, div blanco, titulo
+    // LIBERO.PE (x)
+        //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
+    // POPULAR (x)
+        //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
+    // GUAPA(x)
+        //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
+
     // REPORTERO CIUDADANO (L)
+        //- L = fondo, imagen superior, div blanco, titulo
     // FOOTER(R)
     include ./include/footer.jade
 
