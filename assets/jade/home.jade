@@ -56,9 +56,12 @@ html(lang='es-PE')
         //- L = fondo, imagen superior, div blanco, titulo
     mixin trama(img_superior,titulo)
         .fondo-trama
-            img(src="")
+            img(src=img_superior)
             .container-blanco
-                h3 título
+                h3=titulo
+    +trama("image/img_sucribe.png","<b>Suscribete</b> a nuestro boletín")
+        input
+        button Suscribirse
     // AWEITA (x)
         //- X = Imagen principal, 4 imagenes, 4 textos, mas "seccion, color seccion"
     // FOTOS DESTACADAS
