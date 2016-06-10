@@ -1,11 +1,36 @@
 doctype html
 html(lang='es-PE')
-  head
-    include ./include/head.jade
-    link(rel='stylesheet', type='text/css', href='assets/css/columnistas.css')
-  body
-    //header
-    include ./include/header.jade
-    
-    // FOOTER(R)
-    include ./include/footer.jade
+	head
+	include ./include/head.jade
+	link(rel='stylesheet', type='text/css', href='css/columnistas.css')
+body
+	//header
+	include ./include/header.jade
+	//COLUMNISTAS
+	.columnistas
+		.container
+			.row
+				.col-md-12
+					.col-md-4
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 El gol de la muerte
+							.foto-colum.list-inline
+							img( src="image/img_author_columnista.jpg")
+							h6 Augusto Alvarez Rodrich
+							
+					.col-md-4
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 Dios ha muerto tengo las manos cubiertas de sangre
+							.foto-colum.list-inline
+							img( src="image/colum-astreto.jpg")
+					.col-md-4
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 ¿Cual es tu queso favorito?
+							.foto-colum.list-inline
+							img( src="image/colum_camilo.jpg")
+	//ALL COLUMNISTAS
+	// FOOTER(R)
+	include ./include/footer.jade
