@@ -1,9 +1,85 @@
-.container
-	.row
-		img(src="image/banner_top.jpg")
-	.row
-		.col-md-6
-			ul 
-				li LIBERO.PE
-				li ELPOPULAR.PE
-				li 
+.row.plomo
+	.container
+		.row
+			img.img-100(src="image/banner_top.jpg")
+		.row.plomo.plomo-dos
+			.col-md-6
+				ul.list-unstyle.list-inline
+					li LIBERO.PE
+					li ELPOPULAR.PE
+					li FUNDACION GUSTAVO MOME LLONA
+			.col-md-6
+				ul.list-unstyle.list-inline.pull-right
+					li 
+						button SUSCRIBETE AL BOLETIN
+					li 
+						i.fa.fa-facebook
+					li 
+						i.fa.fa-twitter
+					li 
+						i.fa.fa-google-plus
+					li 
+						i.fa.fa-envelope
+					li
+						i.fa.fa-rss
+					li
+						button BUSCAR
+							i.fa.fa-search
+.row
+	.container
+		.row
+			.col-md-4
+				img(src="image/logo-la-republica.jpg")
+			.col-md-4
+				div
+					h5 DOMINGO
+				div
+					h5 HABLA LA LIDERESA DEL NACIONALISMO
+			.col-md-4
+				div
+					.col-md-1
+						img(src="image/img_editorial_text.jpg")
+					.col-md-7
+						p <strong>La corrupción, los orígenes</strong>
+						p <em>por: Gustavo Mohme Llona</em>
+					.col-md-4
+						img(src="image/img_author.jpg")
+		.row.rojo
+			mixin pet(name)
+				li
+					a(href="#")= name
+			ul.list-unstyle.list-inline.text-center
+				+pet('POLITICA')
+				+pet('ECONOMIA')
+				+pet('SOCIEDAD')
+				+pet('ELEC. REGIONALES')
+				+pet('DEPORTES')
+				+pet('CHAMPIONS L.')
+				+pet('ESPECTACULOS')
+				+pet('ED. IMPRESA')
+				+pet('REGIONALES')
+				+pet('MAS SECCIONES')
+		.row.plomo
+			ul.list-unstyle.list-inline.text-center
+				li
+					h5 TEMAS DEL DIA
+				li
+					mixin pet(name)
+						li
+							a(href="#")= name
+								img.separador(src="image/bullet.gif")
+					ul.list-unstyle.list-inline.text-center
+						i.fa.fa-chevron-left
+						+pet('Globos de oro')
+						+pet('Youtube')
+						+pet('PNP')
+						+pet('Charlie Hebdo')
+						+pet('FC Barcelona')
+						+pet('Alianza Lima')
+						+pet('Balón de Oro')
+						+pet('Laboratoria')
+						+pet('Cumpleaños')
+						i.fa.fa-chevron-right
+		.row
+			img.img-100(src="image/banner-header.jpg")
+
