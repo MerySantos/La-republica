@@ -19,28 +19,28 @@ html(lang='es-PE')
                     i
                         img(src="image/double-arrow-bottom.png")
                     
-                    mixin list-news(titular,img,description,comment,seccion,media)
+                    mixin list-news(tiempo,titular,img,description,comment,seccion,media)
                         li
-                                p Hace 1 hora 12 mins
-                                h4=titular
-                                img(src=img)
-                                p=description
-                                img(src="image/social_sprite.png")
-                                img(src="image/bullet.gif")
-                                img(src="image/ico_comment.png") 
-                                p=comment
-                                img(src="image/bullet.gif")
-                                a=seccion
-                                img(src="image/bullet.gif")
-                                i.fa&attributes(attributes)
+                            p=tiempoHace 
+                            h4=titular
+                            img(src=img)
+                            p=description
+                            img(src="image/social_sprite.png")
+                            img(src="image/bullet.gif")
+                            img(src="image/ico_comment.png") 
+                            p=comment
+                            img(src="image/bullet.gif")
+                            a=seccion
+                            img(src="image/bullet.gif")
+                            i.fa&attributes(attributes)
                     mixin rep-list-news
-                            +list-news("Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
-                            
-                            +list-news("Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
+                        
+                        +list-news("1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
 
-                            +list-news("YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
+                        +list-news("1 hora 12 mins","YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
 
-                            +list-news("Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
+                        +list-news("1 hora 12 mins","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
                     ul
                         +rep-list-news
                         +rep-list-news
