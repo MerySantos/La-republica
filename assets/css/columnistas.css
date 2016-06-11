@@ -7,24 +7,159 @@ a {
   margin: 5px;
 }
 
+button {
+  background-color: #F4F5F7;
+  border: none;
+}
+
 .plomo {
-  background-color: #f2f2f2;
+  background-color: #F4F5F7;
 }
 
 .plomo-dos {
   padding-top: 7px;
+  color: #aaa;
+}
+
+.plomo-dos .fa {
+  font-size: 20px;
+}
+
+.plomo-dos i {
+  margin-top: 5px;
+}
+
+.plomo-dos .fa-facebook {
+  color: #073A9F;
+}
+
+.plomo-dos .fa-twitter {
+  color: #1BBECA;
+}
+
+.plomo-dos .fa-google-plus {
+  color: #CA1B3E;
+}
+
+.plomo-dos .fa-envelope {
+  color: #EDA42E;
+}
+
+.plomo-dos .fa-rss {
+  color: #FC8524;
+}
+
+.separador {
+  margin-left: 5px;
+}
+
+.blanco .logo {
+  margin: 35px 50px;
+}
+
+.blanco-dos {
+  padding: 10px 45px;
+}
+
+.blanco-dos .flot {
+  z-index: 1;
+  position: absolute;
+  left: 150px;
+}
+
+.blanco-dos .flot h5 {
+  border: 1px solid #BA1414;
+  background-color: #BA1414;
+  color: #fff;
+  padding: 3px;
+}
+
+.blanco-dos .estatico {
+  border: 1px solid #aaa;
+  margin-top: 25px;
+  padding: 20px 10px 10px;
+  width: 300px;
+  border-bottom: 2px solid #BA1414;
+}
+
+.blanco-tres .author {
+  border: 1px solid #aaa;
+  margin-top: 25px;
+  padding: 20px 0px 5px;
+  width: 300px;
+  background-color: #2C3238;
+}
+
+.blanco-tres .author-blanco {
+  background-color: #fff;
+}
+
+.blanco-tres .editorial {
+  margin-top: -18px;
+  width: 25px;
+  height: 70px;
+}
+
+.editorial img {
+  width: 20px;
+}
+
+.blanco-tres .texto {
+  z-index: 3;
+  position: absolute;
+  top: 26px;
+  left: 40px;
+  background-color: #fff;
+  height: 77px;
+  width: 250px;
+  padding: 10px 30px 10px 10px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+}
+
+.blanco-tres .hombre {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  margin-left: 90%;
+}
+
+.hombre img {
+  height: 80px;
 }
 
 .rojo {
   background-color: #BA1414;
   padding-top: 7px;
   border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .rojo a {
   color: #fff;
 }
 
-.separador {
-  margin-left: 5px;
+.plomo-rojo ul {
+  margin-bottom: 0;
+}
+
+.plomo-rojo a {
+  color: #000;
+  margin-bottom: 0px;
+}
+
+.plomo-rojo i {
+  color: #aaa;
+}
+
+.plomo-rojo .tema {
+  background-color: #000;
+  color: #fff;
+  margin-left: -25px;
+}
+
+.maestria {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
