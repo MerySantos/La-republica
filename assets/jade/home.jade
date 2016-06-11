@@ -55,6 +55,7 @@ html(lang='es-PE')
                 .col-md-4
                     //Declarar mixins ()
                     mixin trama(img_superior,titulo)
+                        //tramas
                         .fondo-trama
                             img(src=img_superior)
                             .container-blanco
@@ -64,19 +65,53 @@ html(lang='es-PE')
                                 else
                                     p a
 
-                    mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4)
-                        .img(src=img_superior)
+                    mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4,seccion)
+                        //aweita
+                        .row
+                            img(src=img_superior)
                         .row
                             .col-md-5
-                                img(src=img_1)
-                                img(src=img_2)
-                                img(src=img_3)
-                                img(src=img_4)
+                                img.img-responsive.img-100(src=img_1)
                             .col-md-7
                                 p=p_1
+                        .row
+                            .col-md-5
+                                img.img-responsive.img-100(src=img_2)
+                            .col-md-7
                                 p=p_2
+                        .row
+                            .col-md-5
+                                img.img-responsive.img-100(src=img_3)
+                            .col-md-7
                                 p=p_3
+                        .row
+                            .col-md-5
+                                img.img-responsive.img-100(src=img_4)
+                            .col-md-7
                                 p=p_4
+                        .row
+                            p Más en
+                                a=seccion
+
+                    mixin titulos(titulo)
+                        // Titulos de secciones
+                        .titulo
+                            p=titulo
+                    
+                    mixin img_text_ab(img_fondo,texto_foto)
+                        //Especiales  
+                        .imagenes_text_ab
+                            img(src=img_fondo)
+                            p=texto_foto
+
+                    mixin nuestros_blogueros(foto_bloguero,nombre_bloguero,ultimo_blog)
+                        li
+                            .row
+                                .col-md-2
+                                    img.img-100.img-responsive(src=foto_bloguero)
+                                .col-md-10
+                                    a=nombre_bloguero
+                                    p=ultimo_blog
 
                     
                     // SUSCRIBETE BOLETIN (L)
@@ -85,7 +120,47 @@ html(lang='es-PE')
                         button Suscribirse
 
                     //AWEITA
-                    +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks")
+                    +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Aweita.pe")
+
+                    // FOTOS DESTACADAS
+                    +titulos("COLUMNISTAS")
+                    .img-destacadas
+                        img(src="image/img_fotodes_prominent.jpg")
+                        H3 Líneas de Nasca:admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
+                        .row
+                            .col-md-5
+                                img(src="image/img_fotodes.jpg")
+                            .col-md-7
+                                p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
+                        .row
+                            .col-md-5
+                                img(src="image/img_fotodes.jpg")
+                            .col-md-7
+                                p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
+                        .row
+                            .col-md-5
+                                img(src="image/img_fotodes.jpg")
+                            .col-md-7
+                                p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
+
+                    // ESPECIALES
+                    +titulos("ESPECIALES")
+                    +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
+                    +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
+                    +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
+                    +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
+
+                    // CARICATURA DEL DIA
+                    +titulos("CARLINCATURAS DEL DÍA")
+                    img.img-responsive.img-100(src="image/img_carlincatura_sd.jpg")
+                    a Todas las Carlincaturas
+
+                    // NUESTROS BLOGGEROS
+                    +titulos("NUESTROS BLOGUEROS")
+                    ul.list-unstyled
+                        +nuestros_blogueros("image/img_carlincatura_sd.jpg","Augusto Álvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                    
+
 
     // SUSCRIBETE BOLETIN (L)
         //- L = fondo, imagen superior, div blanco, titulo
