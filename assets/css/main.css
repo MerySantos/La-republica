@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 a {
   text-decoration: none;
   margin: 5px;

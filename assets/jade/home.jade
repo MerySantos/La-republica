@@ -2,6 +2,9 @@ doctype html
 html(lang='es-PE')
   head
     include ./include/head.jade
+    append title
+    title Ho
+
     link(rel='stylesheet', type='text/css', href='css/main.css')
   body
     //header
@@ -158,7 +161,7 @@ html(lang='es-PE')
                     // NUESTROS BLOGGEROS
                     +titulos("NUESTROS BLOGUEROS")
                     ul.list-unstyled
-                        +nuestros_blogueros("image/img_carlincatura_sd.jpg","Augusto Álvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
                     
 
 
