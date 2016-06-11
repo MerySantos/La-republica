@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.plomo {
+  background-color: #f2f2f2;
+}
+
+.plomo-dos {
+  padding-top: 7px;
+}
+
+.rojo {
+  background-color: #BA1414;
+  padding-top: 7px;
+  border-radius: 5px;
+}
+
+.rojo a {
+  color: #fff;
+}
+
+.separador {
+  margin-left: 5px;
+}
