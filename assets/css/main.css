@@ -145,86 +145,6 @@ button {
   margin-top: 10px;
 }
 
-.redes-tiempo .fa {
-  font-size: 15px;
-}
-
-.redes-tiempo .fa-facebook {
-  color: #073A9F;
-}
-
-.redes-tiempo .fa-twitter {
-  color: #1BBECA;
-}
-
-.redes-tiempo .fa-google-plus {
-  color: #CA1B3E;
-}
-
-.redes-tiempo i {
-  -webkit-border-bottom-right-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  width: 20px;
-}
-
-.redes-tiempo .azul {
-  border-bottom: 3px solid #073A9F;
-}
-
-.redes-tiempo .celeste {
-  border-bottom: 3px solid #1BBECA;
-}
-
-.redes-tiempo .rojito {
-  border-bottom: 3px solid #CA1B3E;
-}
-
-.titulares .grande {
-  padding-left: 0;
-}
-
-.titulares h4 {
-  z-index: 1;
-  position: absolute;
-  bottom: 20px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.titulares .peques .flot-titu {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 2;
-}
-
-.columnistas {
-  margin-top: 20px;
-}
-
-.columnistas .flot {
-  z-index: 1;
-  position: absolute;
-  left: 550px;
-}
-
-.columnistas .flot h4 {
-  border: 1px solid #BA1414;
-  background-color: #BA1414;
-  color: #fff;
-  padding: 3px;
-}
-
-.columnistas .col-md-2 {
-  background-color: #F4F5F7;
-  border-top: 4px solid #BA1414;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-
-.columnistas img {
-  height: 100px;
-  margin: 20px 55px;
-}
-
 .news > h4 {
   color: #aaa;
   font-family: "Oswald";
@@ -246,18 +166,8 @@ button {
   border: 0.8px solid #eee;
 }
 
-.suscribirse button {
-  background: #BA1414;
-  color: #FFF;
-  margin: 3% auto;
-}
-
 .fondo-trama {
   background: url(../image/trama_square.jpg);
-}
-
-.fondo-trama h4 {
-  font-weight: bold;
 }
 
 .fondo-trama > img {
@@ -292,15 +202,6 @@ button {
   background: #eee;
 }
 
-.nuestros-blogueros a {
-  margin-left: 0;
-  color: #888;
-}
-
-.nuestros-blogueros p {
-  font-weight: bold;
-}
-
 .titulo-secciones {
   border-top: 5px solid gray;
   margin: 15% auto;
@@ -313,41 +214,6 @@ button {
   left: 20%;
   right: 20%;
   font-family: "Oswald";
-}
-
-.more {
-  color: red;
-  font-weight: bold;
-}
-
-.caricatura-del-dia h4 {
-  font-weight: bold;
-}
-
-.edicion-impresa a {
-  color: red;
-}
-
-.preguntas button {
-  background: #BA1414;
-  color: #FFF;
-  margin: 3% auto;
-  width: 40%;
-}
-
-.preguntas a {
-  color: red;
-}
-
-.reportero button {
-  background: #BA1414;
-  color: #FFF;
-  margin: 3% auto;
-  width: 40%;
-}
-
-.reportero a {
-  color: red;
 }
 
 .footer {
