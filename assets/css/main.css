@@ -182,6 +182,15 @@ button {
 .titulares .grande {
   padding-left: 0;
   -webkit-filter: brightness(80%);
+  padding-left: 0;
+}
+
+.titulares .grande h4 {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .titulares .texto-grande {
