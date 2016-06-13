@@ -1,11 +1,84 @@
-*{ outline: 1px solid red;}
+// *{ outline: 1px solid red;}
 // Variables
 	
 // header
 	@import '../sass/import/header';
 
 // 1era parte
+.redes-tiempo{
+	.fa{
+	font-size: 15px;
+	}
+	.fa-facebook{
+		color: #073A9F;
+	} 
+	.fa-twitter{
+		color: #1BBECA;
+	} 
+	.fa-google-plus{
+		color: #CA1B3E;
+	}
+	i{
+		-webkit-border-bottom-right-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		width: 20px;
+	}
+	.azul{
+		border-bottom: 3px solid #073A9F;
+	}
+	.celeste{
+		border-bottom: 3px solid #1BBECA;
+	}
+	.rojito{
+		border-bottom: 3px solid #CA1B3E;
+	}
+} 
+.titulares{
+	.grande{
+		padding-left: 0;
+	}
+	h4{
+		z-index: 1;
+		position: absolute;
+		bottom: 20px;
+		color: #fff;
+		font-weight: bold;
+	}
+	.peques{
+		.flot-titu{
+			background-color: rgba(0, 0, 0, 0.5);
+			opacity: 2;
 
+		}
+
+	}
+
+}
+.columnistas{
+	margin-top: 20px;
+	.flot{
+		z-index: 1;
+		position: absolute;
+		left: 550px;
+		
+	}
+	.flot h4{
+		border: 1px solid #BA1414;
+		background-color: #BA1414;
+		color: #fff;
+		padding: 3px;
+	}
+	.col-md-2{
+		background-color: #F4F5F7;
+		border-top: 4px solid #BA1414;
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
+	img{
+		height: 100px;
+		margin: 20px 55px;
+	}
+}
 // 2da parte
 	
 // FOOTER(R)
