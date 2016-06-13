@@ -1,4 +1,4 @@
-*{outline:1px solid red;}
+// *{outline:1px solid red;}
 // Variables
 	
 // header
@@ -36,46 +36,11 @@ $color_gray:"#aaa";
 	height: 90px;
 	padding: 10px;
 }
-.all_columnistas h3{
-	font-family: $letra_news;}
-
-.bs-colum-list {
-    padding-left: 0;
-    list-style: none;
-    width: 100%;
+.columnistas-imagen{
+	background-color: #E2E6E9;
+	width: 280px;
+	// margin-left: -30px;
+	// margin-right: 50px;
 }
-.bs-colum-list ul{
-	width: 100%;
-	margin: 0px;
-}
-.bs-colum li {
-    height: 200px;
-    font-size: 10px;
-    line-height: 2.4;
-    text-align: center;
-    border: 1px solid #fff;
-    margin-left: 10px;
-
-}
-.back{background-color: #e3e3e3;
-width: 24.3%;margin-left: 5px;
-height: auto; padding-top: 10px; padding-bottom:10px;}
-.list-inline>li {
-	padding: 25px 30px 25px 15px
-}
-.back p{
-	font-family: $letra_news;
-	font-weight: bold;
-	position:relative;
-	top: 5px;
-	margin-left:5px;
-}
-.back h4{ color: $color_gray;
-	margin-left:5px;
-	text-shadow: 5px 5px 5px #aaa;
-	line-height: 0.7;}
-.autor2{
-	position: relative;}
-
 // FOOTER(R)
 	@import '../sass/import/footer';
