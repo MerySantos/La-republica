@@ -177,6 +177,22 @@ button {
   width: 280px;
 }
 
+.barra-columnistas {
+  background-color: #CA1B3E;
+}
+
+.barra-columnistas li {
+  background-color: #DF0101;
+  padding: 3px 5px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.barra-columnistas a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .footer {
   background-color: #DEDEDE;
 }
