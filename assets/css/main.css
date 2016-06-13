@@ -274,3 +274,53 @@ button {
 .news .list-news hr {
   border: 0.8px solid #eee;
 }
+
+.fondo-trama {
+  background: url(../image/trama_square.jpg);
+}
+
+.fondo-trama > img {
+  width: 18%;
+  top: 4%;
+  left: 40%;
+}
+
+.container-blanco {
+  background: #FFF;
+}
+
+.img-p {
+  border: 1px solid #eee;
+}
+
+.img-p .row {
+  margin: 2% 0;
+}
+
+.img-p .col-xs-7 p {
+  margin-bottom: 1%;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.img-text-ab p {
+  width: 94%;
+  left: 1%;
+  bottom: 1%;
+  font-weight: bold;
+  background: #eee;
+}
+
+.titulo-secciones {
+  border-top: 5px solid gray;
+  margin: 15% auto;
+}
+
+.titulo-secciones h4 {
+  background: gray;
+  color: #FFF;
+  top: -12px;
+  left: 20%;
+  right: 20%;
+  font-family: "Oswald";
+}
