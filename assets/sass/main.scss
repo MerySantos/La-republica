@@ -1,6 +1,7 @@
 // *{ outline: 1px solid red;}
 // Variables
-	
+$letra_body:"PT Sans";
+body{font-family:$letra_body;}
 // header
 	@import '../sass/import/header';
 
@@ -80,6 +81,25 @@
 	}
 }
 // 2da parte
+	// Variables
+	$color_news: #aaa;
+	$color_news_hr: #eee;
+	$letra_news:"Oswald";
+	$letra_list_news:"PT Sans";
+	$size_time_news:12px;
+	
+
+	//Asignar
+		//news
+		.news>h4{color:$color_news;font-family:$letra_news;}
+		.news>img{margin:-0.8% auto auto 1%;}
+		.news .list-news>h4{font-weight:bold}
+		.news .list-news>p{font-size:$size_time_news;}
+		.news .list-news hr{border:0.8px solid$color_news_hr;}
+		
+
+	
+
 	
 // FOOTER(R)
 	@import '../sass/import/footer';

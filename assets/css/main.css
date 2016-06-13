@@ -1,3 +1,7 @@
+body {
+  font-family: "PT Sans";
+}
+
 a {
   text-decoration: none;
   margin: 5px;
@@ -218,4 +222,25 @@ button {
 .columnistas img {
   height: 100px;
   margin: 20px 55px;
+}
+
+.news > h4 {
+  color: #aaa;
+  font-family: "Oswald";
+}
+
+.news > img {
+  margin: -0.8% auto auto 1%;
+}
+
+.news .list-news > h4 {
+  font-weight: bold;
+}
+
+.news .list-news > p {
+  font-size: 12px;
+}
+
+.news .list-news hr {
+  border: 0.8px solid #eee;
 }
