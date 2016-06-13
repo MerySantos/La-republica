@@ -9,41 +9,100 @@ body
 	//COLUMNISTAS
 	.columnistas
 		.container
-		mixin a(fecha,titulo,imagen)
-			.row.first
+			.row
 				.col-md-12
-					.col-md-4.bordes
-						.cuadro-colum.text-center
-							p Lunes,14 de Julio de 2015
-							h4 El gol de la muerte
-							.well.foto-colum.d-ib
-								img( src="image/img_author_columnista.jpg")
-								ul.d-ib.list-unstyled
-									li
-										h6 Augusto Alvarez Rodrich
-									li 
-										h5 Observador
-					.col-md-4.bordes
-						.cuadro-colum.text-center
-							p Lunes,14 de Julio de 2015
-							h4 Dios ha muerto tengo las manos cubiertas de sangre
-							.well.foto-colum.list-inline
-								img( src="image/colum-astreto.jpg")
-								h6 Mirko 
-								h5 Observador
-					.col-md-4.bordes
-						.cuadro-colum.text-center
-							p Lunes,14 de Julio de 2015
-							h4 ¿Cual es tu queso favorito?
-							.well.foto-colum.list-inline
-								img( src="image/colum_camilo.jpg")
-								h6 Aldo Miyashiro
-								h5 Chino de mi Barrio
-		+a
-		+a
-		+a
-				
+					h1 <strong> Columnistas</strong>
+					h4.db-ib LO ULTIMO EN COLUMNISTAS
+					img.d-ib.img-responsive(src="image/double-arrow-bottom.png")
+			mixin Blog
+				.row
+					mixin Blogfila(fecha,titulo,imagen,blog,nombre)
+						.col-md-4
+							.blog.thumbnail
+								.contenido-blog
+									p.text-center.mt-3=fecha
+									h3.text-center=titulo
+								.abajo-imagen
+										img.img-responsive.pull-left.blog-avatar.thumbnail(src=imagen)
+										.ml-3.mt-3.pull-left
+										p=blog
+										p.strong=nombre
+				+Blogfila("Lunes 14 de Julio de 2015","El gol de la muerte","image/blog_avatar_01.jpg","BLOG","LIBROS")
+				+Blogfila("Lunes 14 de Julio de 2015","Dios ha muerto, tengo las manos cubiertas de sangre","image/blog_avatar_02.jpg","BLOG","Ya lo pasado, PASADO")
+				+Blogfila("Lunes 14 de Julio de 2015","¿Cual es tu queso favorito?","image/blog_avatar_03.jpg","BLOG","Décimas cosas")
+			+Blog
+			+Blog
+			+Blog
+			+Blog
 
 	//ALL COLUMNISTAS
+	.all_columnistas
+		.container
+			.row
+				.col-md-12(style="padding:0px;")
+					h3.d-ib.pd-2 Todos los columnistas
+					img.d-ib.img-responsive(src="image/double-arrow-bottom.png")
+
+			.row
+
+					.bs-colum
+					mixin b
+						ul.bs-colum-list.list-inline
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Francisco Durand
+									h4.big Tiro al Blanco
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_pascua.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Humberto Campedonico
+									h4.big.bold Cristal de Mira
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_verdad.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Javier Ágreda
+									h4.big Jaque Perpetuo
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_camilo.jpg")
+								.autor.text-left.d-ib
+									p.bold Javier Ágreda
+									h4.big Jaque Perpetuo
+					+b
+					mixin c
+						ul.bs-colum-list.list-inline
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_i.png")
+								.autor.text-left.d-ib
+									p.nombre.bold Francisco Durand
+									h4.big Delito de Opinion
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor2.text-left.d-ib
+									p.nombre.bold Humberto Campedonico
+									h4 Actualidad
+								
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Javier Ágreda
+									h4.big Mirada Externa
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.bold Javier Ágreda
+									h4.big Defensa
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+
+
 	// FOOTER(R)
 	include ./include/footer.jade

@@ -114,6 +114,7 @@ button {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #fff;
 }
 
 .rojo a {
@@ -142,4 +143,45 @@ button {
 .maestria {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.footer {
+  background-color: #DEDEDE;
+}
+
+.listapet {
+  font-size: 12px;
+}
+
+.listapet a {
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+}
+
+.social {
+  margin-top: 25%;
+}
+
+.social_media img {
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.social ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.social h3 {
+  font-weight: bold;
+}
+
+.social p {
+  line-height: 1em;
+}
+
+.social li {
+  font-size: 16px;
 }
