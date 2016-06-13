@@ -145,6 +145,124 @@ button {
   margin-top: 10px;
 }
 
+.redes-tiempo .fa {
+  font-size: 15px;
+}
+
+.redes-tiempo .fa-facebook {
+  color: #073A9F;
+}
+
+.redes-tiempo .fa-twitter {
+  color: #1BBECA;
+}
+
+.redes-tiempo .fa-google-plus {
+  color: #CA1B3E;
+}
+
+.redes-tiempo i {
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  width: 20px;
+}
+
+.redes-tiempo .azul {
+  border-bottom: 3px solid #073A9F;
+}
+
+.redes-tiempo .celeste {
+  border-bottom: 3px solid #1BBECA;
+}
+
+.redes-tiempo .rojito {
+  border-bottom: 3px solid #CA1B3E;
+}
+
+.titulares .grande {
+  padding-left: 0;
+  -webkit-filter: brightness(80%);
+  padding-left: 0;
+}
+
+.titulares .grande h4 {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.titulares .texto-grande {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.titulares .peques .texto {
+  -webkit-filter: brightness(80%);
+}
+
+.titulares .peques .flot-texto {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.columnistas {
+  margin-top: 20px;
+}
+
+.columnistas .flot {
+  z-index: 1;
+  position: absolute;
+  left: 550px;
+}
+
+.columnistas .flot h4 {
+  border: 1px solid #BA1414;
+  background-color: #BA1414;
+  color: #fff;
+  padding: 3px;
+}
+
+.columnistas .col-md-2 {
+  background-color: #F4F5F7;
+  border-top: 4px solid #BA1414;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.columnistas img {
+  height: 100px;
+  margin: 20px 55px;
+}
+
+.bajo-colum {
+  text-align: center;
+}
+
+.bajo-colum h4 {
+  color: #BA1414;
+  font-weight: bold;
+}
+
+.bajo-colum .otro {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.bajo-colum .banner-derecho {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .news > h4 {
   color: #aaa;
   font-family: "Oswald";
