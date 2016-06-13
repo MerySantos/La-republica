@@ -38,10 +38,28 @@ body
 
 	//ALL COLUMNISTAS
 	.container.columnistas-carito
-			.row
-				.col-md-12
-					h1 <strong> COLUMNISTAS</strong>
-					h4 TODOS LOS COLUMNISTAS
+			.row.barra-columnistas
+				.barra
+					ul.list-unstyled.list-inline.text-center
+						li
+							a(href="#") TODOS
+						li
+							a(href="#") ABC
+						li
+							a(href="#") DEF
+						li
+							a(href="#") GHI
+						li
+							a(href="#") JKL
+						li
+							a(href="#") MNO
+						li
+							a(href="#") PQR
+						li
+							a(href="#") STU
+						li
+							a(href="#") VWXYZ
+						
 			mixin Blog
 				.row
 					mixin Blogfila(imagen,blog,nombre)
