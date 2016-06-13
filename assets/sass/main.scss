@@ -34,6 +34,49 @@ body{font-family:$letra_body;}
 			border-bottom: 3px solid #CA1B3E;
 		}
 	} 
+<<<<<<< HEAD
+	.fa-google-plus{
+		color: #CA1B3E;
+	}
+	i{
+		-webkit-border-bottom-right-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		width: 20px;
+	}
+	.azul{
+		border-bottom: 3px solid #073A9F;
+	}
+	.celeste{
+		border-bottom: 3px solid #1BBECA;
+	}
+	.rojito{
+		border-bottom: 3px solid #CA1B3E;
+	}
+} 
+.titulares{
+	.grande{
+		padding-left: 0;
+		-webkit-filter: brightness(80%);
+	}
+	.texto-grande{
+		z-index: 1;
+		position: absolute;
+		bottom: 20px;
+		color: #fff;
+		font-weight: bold;
+		padding: 5px 20px;
+	}
+	.peques{
+		.texto{
+			-webkit-filter: brightness(80%);
+		}
+		.flot-texto{
+			z-index: 1;
+			position: absolute;
+			bottom: 30px;
+			font-weight: bold;
+			color: #fff;
+=======
 	.titulares{
 		.grande{
 			padding-left: 0;
@@ -44,6 +87,7 @@ body{font-family:$letra_body;}
 			bottom: 20px;
 			color: #fff;
 			font-weight: bold;
+>>>>>>> 4038548a88360f98a975c7a639052b2dff051eb8
 		}
 		.peques{
 			.flot-titu{
@@ -79,6 +123,22 @@ body{font-family:$letra_body;}
 			height: 100px;
 			margin: 20px 55px;
 		}
+}
+.bajo-colum{
+	text-align: center;
+	h4{
+		color: #BA1414;
+		font-weight: bold;
+	}
+		.otro{
+		border: 1px solid #aaa;
+		border-radius: 4px;
+		margin-top: 10px;
+	}
+	.banner-derecho{
+		max-height: 100%;
+		max-width: 100%;
+	}
 }
 // 2da parte
 	// Variables

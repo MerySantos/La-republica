@@ -114,6 +114,7 @@ button {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #fff;
 }
 
 .rojo a {
@@ -180,19 +181,28 @@ button {
 
 .titulares .grande {
   padding-left: 0;
+  -webkit-filter: brightness(80%);
 }
 
-.titulares h4 {
+.titulares .texto-grande {
   z-index: 1;
   position: absolute;
   bottom: 20px;
   color: #fff;
   font-weight: bold;
+  padding: 5px 20px;
 }
 
-.titulares .peques .flot-titu {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 2;
+.titulares .peques .texto {
+  -webkit-filter: brightness(80%);
+}
+
+.titulares .peques .flot-texto {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .columnistas {
@@ -222,6 +232,26 @@ button {
 .columnistas img {
   height: 100px;
   margin: 20px 55px;
+}
+
+.bajo-colum {
+  text-align: center;
+}
+
+.bajo-colum h4 {
+  color: #BA1414;
+  font-weight: bold;
+}
+
+.bajo-colum .otro {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.bajo-colum .banner-derecho {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .news > h4 {
