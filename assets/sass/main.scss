@@ -135,10 +135,11 @@ body{font-family:$letra_body;}
 			.news .list-news>h4{font-weight:bold}
 			.news .list-news>p{font-size:$size_time_news;}
 			.news .list-news hr{border:0.8px solid$color_news_hr;}
-		
+			.suscribirse button {background: #BA1414;color: #FFF;margin: 3% auto;}
 		//MIXIN
 			.fondo-trama{background:url(../image/trama_square.jpg);}
 			.fondo-trama>img{width:18%;top:4%;left:40%;}
+			.fondo-trama h4 {font-weight: bold;}
 			.container-blanco{background:#FFF;}
 
 			.img-p{border:1px solid $border_4img_4p;}
@@ -150,7 +151,21 @@ body{font-family:$letra_body;}
 
 			.titulo-secciones{border-top:5px solid $titulo-secciones; margin: 15% auto ;}
 			.titulo-secciones h4{background: $titulo-secciones; color:#FFF; top:-12px;left:20%;right:20%;font-family:$letra_titulo-secciones;}
+		
+			.nuestros-blogueros a {margin-left: 0;color: #888;}
+			.nuestros-blogueros p {font-weight: bold;}
 
+			.more {color: red; font-weight: bold;} //reutilizable
+
+			.caricatura-del-dia h4 {font-weight: bold;}
+
+			.edicion-impresa a {color: red;}
+
+			.preguntas button { background: #BA1414; color: #FFF;margin: 3% auto; width: 40%;}
+			.preguntas a { color: red;}
+
+			.reportero button { background: #BA1414; color: #FFF; margin: 3% auto; width: 40%;}
+			.reportero a {color: red; }
 
 	
 
