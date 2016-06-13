@@ -219,7 +219,8 @@ html(lang='es-PE')
                         +rep-list-news
                         +rep-list-news
                         +rep-list-news
-                        +list-news("Hace 1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
+                        +rep-list-news
+                        //- +list-news("Hace 1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
 
 
                 .col-md-4
@@ -276,24 +277,25 @@ html(lang='es-PE')
                     
                     mixin img_text_ab(img_fondo,texto_foto)
                         //Especiales  
-                        .img-text-ab.p-rl.text-center
+                        .img-text-ab.p-rl.text-center.mb-5
                             img.img-100(src=img_fondo)
                             p.p-ab.pd-2.mg-2.d-ib=texto_foto
 
                     mixin nuestros_blogueros(foto_bloguero,nombre_bloguero,ultimo_blog)
-                        li
+                        li.mb-5.nuestros-blogueros.text-center
                             .row
-                                .col-md-2
+                                .col-md-3
                                     img.img-100.img-responsive(src=foto_bloguero)
-                                .col-md-10
+                                .col-md-9
                                     a=nombre_bloguero
                                     p=ultimo_blog
 
                     
                     // SUSCRIBETE BOLETIN (L)
-                    +trama("image/img_sucribe.png","Suscribete a nuestro boletín")
-                        input
-                        button Suscribirse
+                    .suscribirse.text-center
+                        +trama("image/img_sucribe.png","Suscribete a nuestro boletín")
+                            input.img-100
+                            button.pd-1.img-100 SUSCRIBIRSE
 
                     //AWEITA
                     +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Aweita.pe")
@@ -327,72 +329,85 @@ html(lang='es-PE')
                     +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
 
                     // CARICATURA DEL DIA
-                    +titulos("CARLINCATURAS DEL DÍA")
-                    img.img-responsive.img-100(src="image/img_carlincatura_sd.jpg")
-                    a Todas las Carlincaturas
+                    .caricatura-del-dia.text-center
+                        +titulos("CARLINCATURAS DEL DÍA")
+                        h4 Carlincaturas 30-01-2015
+                        img.img-responsive.img-100(src="image/img_carlincatura_sd.jpg")
+                        br
+                        a.more Todas las Carlincaturas
 
                     // NUESTROS BLOGGEROS
-                    +titulos("NUESTROS BLOGUEROS")
-                    ul.list-unstyled
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
-                    a Todos los blogs
+                    .blogueros.text-center
+                        +titulos("NUESTROS BLOGUEROS")
+                        ul.list-unstyled.text-center
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                            +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        a.more Todos los blogs
 
                     // EDICION IMPRESA
-                    +titulos("EDICION IMPPRESA")
-                    ul.list-unstyled
-                        li
-                            .row
-                                .col-md-5
-                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
-                                .col-md-7
-                                    h4 Extorsionan menores en colegios
-                                    a(href="#") La República-Norte
-                        li
-                            .row
-                                .col-md-5
-                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
-                                .col-md-7
-                                    h4 Extorsionan menores en colegios
-                                    a(href="#") La República-Norte
-                        li
-                            .row
-                                .col-md-5
-                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
-                                .col-md-7
-                                    h4 Extorsionan menores en colegios
-                                    a(href="#") La República-Norte
+                    .edicion-impresa
+                        +titulos("EDICION IMPPRESA")
+                        img.img-100.img-responsive.mb-5(src="image/img_impreso_sd.jpg")
+
+                        ul.list-unstyled
+                            li
+                                .row
+                                    .col-md-5
+                                        img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                    .col-md-7.mt-5
+                                        h4 Extorsionan menores en colegios
+                                        a(href="#") La República-Norte
+                            li
+                                .row
+                                    .col-md-5
+                                        img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                    .col-md-7.mt-5
+                                        h4 Extorsionan menores en colegios
+                                        a(href="#") La República-Norte
+                            li
+                                .row
+                                    .col-md-5
+                                        img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                    .col-md-7.mt-5
+                                        h4 Extorsionan menores en colegios
+                                        a(href="#") La República-Norte
+                    hr
 
                     // Infografia
                     +titulos("INFOGRAFÍAS")
                     +img_text_ab("image/img_especiales_aside.jpg","Historico cierre de frontera")
                     +img_text_ab("image/img_especiales_aside.jpg","Historico cierre de frontera")
+                    hr
 
 
                     // PREGUNTAS (L)
                     +trama("image/img_pregunta.png","La pregunta de hoy")
-                        p ¿Cree usted que la premier Ana Jara debe renunciar?
-                        input(type="radio")
-                        | Si 
-                        input(type="radio")
-                        | No
-                        
-                        button Votar
-                        a Ver Resultados
+                        .preguntas.text-center
+                            p ¿Cree usted que la premier Ana Jara debe renunciar?
+                            input(type="radio")
+                            | Si 
+                            br
+                            input(type="radio")
+                            | No
+                            br
+                            button Votar
+                            br
+                            a Ver Resultados
 
                     +trama("","La pregunta de ayer")
-                        p ¿Cree usted que se militarizó la conmemoración de la Haya en Lima?
-                        .progress
-                            .progress-bar.progress-bar-success(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 55%") 55%
-                                span.sr-only 55%
-                        .progress
-                            .progress-bar.progress-bar-danger(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 25%") 25%
-                                span.sr-only 25%
-                        a Ver Preguntas Pasadas
+                        .preguntas.text-center
+                            p ¿Cree usted que se militarizó la conmemoración de la Haya en Lima?
+                            .progress
+                                .progress-bar.progress-bar-success(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 55%") 55%
+                                    span.sr-only 55%
+                            .progress
+                                .progress-bar.progress-bar-danger(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 25%") 25%
+                                    span.sr-only 25%
+                            a Ver Preguntas Pasadas
 
                     // LIBERO.PE (x)
                     +4img_4p("image/logo_libero.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","Fiorentina empató 1-1 en su vida al Genoa con gran actuacion de Juan Vargas[VIDEO]","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Libero.pe")
@@ -405,12 +420,15 @@ html(lang='es-PE')
                     +4img_4p("image/logo_wapa.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","Como renovar el guardarropa de los mas pequeños en este verano","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Wapa.pe")
 
                     // REPORTERO CIUDADANO (L)
-                    +trama("image/img_reporteroc.png","Reportero ciudadano")
-                        img.img-responsive.img-100(src="image/img_sd_reporteroc.jpg")
-                        h4 Estacionamiento indebido
-                        p ¿Esta permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa Placa DG623, eso que antes lo dejaba entre la vereda y mi puerta?
-                        button ENVIAR FOTOS
-                        a Mas fotos
+                    .reportero
+                        +trama("image/img_reporteroc.png","Reportero ciudadano")
+                            img.img-responsive.img-100(src="image/img_sd_reporteroc.jpg")
+                            h4 Estacionamiento indebido
+                            p ¿Esta permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa Placa DG623, eso que antes lo dejaba entre la vereda y mi puerta?
+                        .text-center
+                            button ENVIAR FOTOS
+                            br
+                            a Mas fotos
                               
 
     // SUSCRIBETE BOLETIN (L)

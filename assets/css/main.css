@@ -245,8 +245,18 @@ button {
   border: 0.8px solid #eee;
 }
 
+.suscribirse button {
+  background: #BA1414;
+  color: #FFF;
+  margin: 3% auto;
+}
+
 .fondo-trama {
   background: url(../image/trama_square.jpg);
+}
+
+.fondo-trama h4 {
+  font-weight: bold;
 }
 
 .fondo-trama > img {
@@ -281,6 +291,15 @@ button {
   background: #eee;
 }
 
+.nuestros-blogueros a {
+  margin-left: 0;
+  color: #888;
+}
+
+.nuestros-blogueros p {
+  font-weight: bold;
+}
+
 .titulo-secciones {
   border-top: 5px solid gray;
   margin: 15% auto;
@@ -293,4 +312,39 @@ button {
   left: 20%;
   right: 20%;
   font-family: "Oswald";
+}
+
+.more {
+  color: red;
+  font-weight: bold;
+}
+
+.caricatura-del-dia h4 {
+  font-weight: bold;
+}
+
+.edicion-impresa a {
+  color: red;
+}
+
+.preguntas button {
+  background: #BA1414;
+  color: #FFF;
+  margin: 3% auto;
+  width: 40%;
+}
+
+.preguntas a {
+  color: red;
+}
+
+.reportero button {
+  background: #BA1414;
+  color: #FFF;
+  margin: 3% auto;
+  width: 40%;
+}
+
+.reportero a {
+  color: red;
 }
