@@ -4,6 +4,12 @@
 // header
 	@import '../sass/import/header';
 // contenido
+$letra_news:
+	"oswald";
+$color_gray:"#aaa";
+.blog-new>h4{color:$color_gray;font-family:$letra_news;}
+.blog-new>img{margin:-0.8% auto auto 1%;}
+
 .blog{
 	padding: 10px 20px;
 	// border: 2px solid #aaa;

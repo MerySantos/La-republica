@@ -10,10 +10,11 @@ body
 	.columnistas
 		.container
 			.row
-				.col-md-12
+				.col-md-12.columnistas-new
 					h1 <strong> Columnistas</strong>
 					h4.db-ib LO ULTIMO EN COLUMNISTAS
-					img.d-ib.img-responsive(src="image/double-arrow-bottom.png")
+					img.d-ib(src="image/double-arrow-bottom.png")
+					
 			mixin Blog
 				.row
 					mixin Blogfila(fecha,titulo,imagen,blog,nombre)

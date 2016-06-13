@@ -1,10 +1,24 @@
-*{outline:1px solid red;}
+// *{outline:1px solid red;}
 // Variables
 	
 // header
 	@import '../sass/import/header';
 // contactanos
-	
+	$fondo-formulario: #Dedede;
+	$letra_news:"oswald";
+
+	.nosotros h1{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	.contactese input { border-top: 2px solid #A9A9A9;border-left:2px solid #A9A9A9;
+		background-color: $fondo-formulario; 
+	}
+	.contactese textarea { border-top: 2px solid #A9A9A9;border-left:2px solid #A9A9A9;
+		background-color: $fondo-formulario; 
+	}
+	.radio h5{ line-height: 2.0;}
+	.contactese img{margin:auto;}
 
 // FOOTER(R)
 	@import '../sass/import/footer';
