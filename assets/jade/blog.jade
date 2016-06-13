@@ -1,11 +1,40 @@
 doctype html
 html(lang='es-PE')
-  head
-    include ./include/head.jade
-    link(rel='stylesheet', type='text/css', href='assets/css/blog.css')
-  body
-    //header
-    include ./include/header.jade
-    
-    // FOOTER(R)
-    include ./include/footer.jade
+	head
+		include ./include/head.jade
+		link(rel='stylesheet', type='text/css', href='css/blog.css')
+	body
+		//header
+		include ./include/header.jade
+		//CONTENIDO
+		.container
+			.row
+				.col-md-12
+					h1 <strong> Blogs</strong>
+					h4 LO ULTIMO EN BLOGS
+			mixin Blog
+				.row
+					mixin Blogfila(fecha,titulo,imagen,blog,nombre)
+						.col-md-4
+							.blog.thumbnail
+								.contenido-blog
+									p.text-center.mt-3=fecha
+									h3.text-center=titulo
+								.abajo-imagen
+										img.img-responsive.pull-left.blog-avatar.thumbnail(src=imagen)
+										.ml-3.mt-3.pull-left
+										p=blog
+										p.strong=nombre
+				+Blogfila("Lunes 14 de Julio de 2015","El gol de la muerte","image/blog_avatar_01.jpg","BLOG","LIBROS")
+				+Blogfila("Lunes 14 de Julio de 2015","Dios ha muerto, tengo las manos cubiertas de sangre","image/blog_avatar_02.jpg","BLOG","Ya lo pasado, PASADO")
+				+Blogfila("Lunes 14 de Julio de 2015","¿Cual es tu queso favorito?","image/blog_avatar_03.jpg","BLOG","Décimas cosas")
+			+Blog
+			+Blog
+			+Blog
+			+Blog
+			+Blog
+			+Blog
+			+Blog
+
+		// FOOTER(R)
+		include ./include/footer.jade

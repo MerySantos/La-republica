@@ -9,36 +9,199 @@ html(lang='es-PE')
   body
     //header
     include ./include/header.jade
-    // HERO SECTION: 
+    // HERO SECTION
+    .hero-section
+        .container
+            .row.text-center
+                div
+                    h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+            .row.redes-tiempo.text-center
+                ul.list-unstyle.list-inline
+                    li
+                        i.fa.fa-facebook.azul
+                    li
+                        i.fa.fa-twitter.celeste
+                    li
+                        i.fa.fa-google-plus.rojito
+                    li
+                        img(src="image/bullet.gif")
+                    li Hace 12 minutos
+                    li
+                        img(src="image/bullet.gif")
+                    li Politica
+            .row.titulares
+                .col-md-6.grande
+                    img.img-100(src="image/img_grid_principal.jpg")
+                    h4 JNE impulsará campaña en favor de la aprobacion de la Reforma Electoral
+                .col-md-6.peques
+                    .row.peque-arriba
+                        div.flot-titu
+                            img.img-100(src="image/img_grid_secundario.jpg")
+                            
+                        h5 Martín Belaunde Lossio: Empresas vinculadas al mpresario contrataron por s/. 3 000 millones 
+                                    a(href="#") FOTOS
+                        div.flot-titu
+                            img.img-100(src="image/img_grid_secundario.jpg")
+                            
+                         h5 Martín Belaunde Lossio: Empresas vinculadas al mpresario contrataron por s/. 3 000 millones 
+                                    a(href="#") FOTOS
+            .row.columnistas
+                .container
+                    div.flot
+                        h4 COLUMNISTAS
+                    .row.carrusel
+                        div#caorusel-example-generic.carousel.slide(data-ride="carousel")
+                            ol.carousel-indicators
+                                li.active(data-target="#carousel-example-generic" data-slide-to="0")
+                                li(data-target="#carousel-example-generic" data-slide-to="1")
+                            div.carousel-inner(role="listbox")
+                                div.item.active
+                                    div.imagenes.pri-imag
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                    div.carousel-caption
+                                div.item
+                                    div.imagenes.sec-imag
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                    div.carousel-caption
+                                 div.item
+                                    div.imagenes.sec-imag
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_noticias_relacionadas_slider.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                        .col-md-2
+                                            .row.text-center
+                                                img.thumbnail.img-responsive.bloguero(src="image/img_blogueros.jpg")
+                                            .row.text-center
+                                                p <strong>Mario Vargas Llosa</strong>
+                                                h4 <strong>Megarrenuncia apelugante</strong>
+                                    div.carousel-caption
     // COLUMNISTAS
     // DESTACADOS+ PUBLICIDAD
     .fondo-news
         .container
             .row
                 //ULTIMAS NOTICIAS
-                .col-md-8
+                .col-md-8.news
                     //Declarar mixins
                     mixin list-news(tiempo,titular,img,description,comment,seccion,media)
-                        li
+                        li.list-news.mt-2
                             p=tiempo 
                             h4=titular
-                            .row
+                            .row.mt-2
                                 .col-md-4
-                                    img(src=img)
+                                    img.img-100.img-responsive(src=img)
                                 .col-md-8
                                     p=description
-                                    img.d-ib(src="image/social_sprite.png")
-                                    img.d-ib(src="image/bullet.gif")
-                                    img.d-ib(src="image/ico_comment.png") 
-                                    p.d-ib=comment
-                                    img.d-ib(src="image/bullet.gif")
-                                    a.d-ib=seccion
-                                    img.d-ib(src="image/bullet.gif")
-                                    i.d-ib.fa&attributes(attributes)
+                                    .media
+                                        img.d-ib.mr-4(src="image/social_sprite.png")
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        img.d-ib(src="image/ico_comment.png") 
+                                        p.mr-4.d-ib=comment
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        a.mr-4.d-ib=seccion
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        i.d-ib.fa&attributes(attributes)
+                            hr.mt-2
 
-                    H4 ULTIMAS NOTICIAS
-                    i
-                        img(src="image/double-arrow-bottom.png")
+                    H4.d-ib ULTIMAS NOTICIAS
+                    img.d-ib(src="image/double-arrow-bottom.png")
                     
                     mixin rep-list-news
                         +list-news("Hace 1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
@@ -63,10 +226,10 @@ html(lang='es-PE')
                     //Declarar mixins ()
                     mixin trama(img_superior,titulo)
                         //tramas
-                        .fondo-trama
-                            img(src=img_superior)
-                            .container-blanco
-                                h3=titulo
+                        .fondo-trama.text-center.pd-1.pt-7.p-rl
+                            img.p-ab(src=img_superior)
+                            .container-blanco.pd-1.pt-7.mg-2.mt-5.text-center
+                                h4=titulo
                                 if block
                                     block
                                 else
@@ -74,42 +237,48 @@ html(lang='es-PE')
 
                     mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4,seccion)
                         //aweita
-                        .row
-                            img(src=img_superior)
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_1)
-                            .col-md-7
-                                p=p_1
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_2)
-                            .col-md-7
-                                p=p_2
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_3)
-                            .col-md-7
-                                p=p_3
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_4)
-                            .col-md-7
-                                p=p_4
-                        .row
-                            p Más en
-                                a=seccion
+                        .img-p.mt-8.pd-2.container-fluid
+                            .row.text-center
+                                img(src=img_superior).mg-5
+                            .row
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_1)
+                                .col-xs-7
+                                    p
+                                        b=p_1
+                            .row
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_2)
+                                .col-xs-7
+                                    p
+                                        b=p_2
+                            .row.mt-2
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_3)
+                                .col-xs-7
+                                    p
+                                        b=p_3
+                            .row.mt-2
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_4)
+                                .col-xs-7
+                                    p
+                                        b=p_4
+                            .row.mt-2.text-center
+                                p Más en
+                                    a=seccion
+
 
                     mixin titulos(titulo)
                         // Titulos de secciones
                         .titulo
-                            p=titulo
+                            H3=titulo
                     
                     mixin img_text_ab(img_fondo,texto_foto)
                         //Especiales  
-                        .imagenes_text_ab
-                            img(src=img_fondo)
-                            p=texto_foto
+                        .img-text-ab.p-rl.text-center
+                            img.img-100(src=img_fondo)
+                            p.p-ab.pd-2.mg-2.d-ib=texto_foto
 
                     mixin nuestros_blogueros(foto_bloguero,nombre_bloguero,ultimo_blog)
                         li
@@ -130,26 +299,26 @@ html(lang='es-PE')
                     +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Aweita.pe")
 
                     // FOTOS DESTACADAS
-                    +titulos("COLUMNISTAS")
+                    +titulos("FOTOS DESTACADAS")
                     .img-destacadas
-                        img(src="image/img_fotodes_prominent.jpg")
-                        H3 Líneas de Nasca:admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        img.img-100.img-responsive(src="image/img_fotodes_prominent.jpg")
+                        H3 Líneas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-
+                        hr
                     // ESPECIALES
                     +titulos("ESPECIALES")
                     +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")

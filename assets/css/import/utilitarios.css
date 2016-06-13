@@ -38,6 +38,10 @@
   margin-top: 8%;
 }
 
+.mr-4 {
+  margin-right: 4%;
+}
+
 .pd-1 {
   padding: 1%;
 }
@@ -48,6 +52,14 @@
 
 .pd-5 {
   padding: 5%;
+}
+
+.pt-5 {
+  padding-top: 5%;
+}
+
+.pt-7 {
+  padding-top: 7%;
 }
 
 .p-ab {
