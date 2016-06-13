@@ -45,5 +45,72 @@ body
 				
 
 	//ALL COLUMNISTAS
+	.all_columnistas
+		.container
+			.row
+				.col-md-12(style="padding:0px;")
+						h3.d-ib.pd-2 Todos los columnistas
+						img.d-ib.img-responsive(src="image/double-arrow-bottom.png")
+			.row
+					.bs-colum
+					mixin b
+						ul.bs-colum-list.list-inline
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Francisco Durand
+									h4.big Tiro al Blanco
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_pascua.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Humberto Campedonico
+									h4.big.bold Cristal de Mira
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_verdad.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Javier Ágreda
+									h4.big Jaque Perpetuo
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_camilo.jpg")
+								.autor.text-left.d-ib
+									p.bold Javier Ágreda
+									h4.big Jaque Perpetuo
+					+b
+					mixin c
+						ul.bs-colum-list.list-inline
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/colum_i.png")
+								.autor.text-left.d-ib
+									p.nombre.bold Francisco Durand
+									h4.big Delito de Opinion
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor2.text-left.d-ib
+									p.nombre.bold Humberto Campedonico
+									h4 Actualidad
+									h4 Económica-Oscar
+									h4 Dancourt
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.nombre.bold Javier Ágreda
+									h4.big Mirada Externa
+							li.back
+								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
+								.autor.text-left.d-ib
+									p.bold Javier Ágreda
+									h4.big Defensa
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+					+c
+					+b
+
+
 	// FOOTER(R)
 	include ./include/footer.jade
