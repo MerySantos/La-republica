@@ -1,4 +1,4 @@
-// *{ outline: 1px solid red;}
+*{ outline: 1px solid red;}
 // Variables
 $letra_body:"PT Sans";
 body{font-family:$letra_body;}
@@ -14,16 +14,30 @@ body{font-family:$letra_body;}
 	$letra_news:"Oswald";
 	$letra_list_news:"PT Sans";
 	$size_time_news:12px;
+	$border_4img_4p:#eee;
+	$bg_p_img_text_ab:#eee;
 	
 
 	//Asignar
 		//news
-		.news>h4{color:$color_news;font-family:$letra_news;}
-		.news>img{margin:-0.8% auto auto 1%;}
-		.news .list-news>h4{font-weight:bold}
-		.news .list-news>p{font-size:$size_time_news;}
-		.news .list-news hr{border:0.8px solid$color_news_hr;}
+			.news>h4{color:$color_news;font-family:$letra_news;}
+			.news>img{margin:-0.8% auto auto 1%;}
+			.news .list-news>h4{font-weight:bold}
+			.news .list-news>p{font-size:$size_time_news;}
+			.news .list-news hr{border:0.8px solid$color_news_hr;}
 		
+		//MIXIN
+			.fondo-trama{background:url(../image/trama_square.jpg);}
+			.fondo-trama>img{width:18%;top:4%;left:40%;}
+			.container-blanco{background:#FFF;}
+
+			.img-p{border:1px solid $border_4img_4p;}
+			.img-p .row {margin:2% 0;}
+			.img-p .col-xs-7 p{margin-bottom:1%;font-size:14px;line-height:1.2;}
+
+			// .img-text-ab img{z-index:-100;}
+			.img-text-ab p{width:94%;left:1%;bottom:1%;font-weight:bold; background:$bg_p_img_text_ab;}
+
 
 	
 

@@ -64,10 +64,10 @@ html(lang='es-PE')
                     //Declarar mixins ()
                     mixin trama(img_superior,titulo)
                         //tramas
-                        .fondo-trama
-                            img(src=img_superior)
-                            .container-blanco
-                                h3=titulo
+                        .fondo-trama.text-center.pd-1.pt-7.p-rl
+                            img.p-ab(src=img_superior)
+                            .container-blanco.pd-1.pt-7.mg-2.mt-5.text-center
+                                h4=titulo
                                 if block
                                     block
                                 else
@@ -75,42 +75,48 @@ html(lang='es-PE')
 
                     mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4,seccion)
                         //aweita
-                        .row
-                            img(src=img_superior)
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_1)
-                            .col-md-7
-                                p=p_1
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_2)
-                            .col-md-7
-                                p=p_2
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_3)
-                            .col-md-7
-                                p=p_3
-                        .row
-                            .col-md-5
-                                img.img-responsive.img-100(src=img_4)
-                            .col-md-7
-                                p=p_4
-                        .row
-                            p Más en
-                                a=seccion
+                        .img-p.mt-8.pd-2.container-fluid
+                            .row.text-center
+                                img(src=img_superior).mg-5
+                            .row
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_1)
+                                .col-xs-7
+                                    p
+                                        b=p_1
+                            .row
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_2)
+                                .col-xs-7
+                                    p
+                                        b=p_2
+                            .row.mt-2
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_3)
+                                .col-xs-7
+                                    p
+                                        b=p_3
+                            .row.mt-2
+                                .col-xs-5
+                                    img.img-responsive.img-100(src=img_4)
+                                .col-xs-7
+                                    p
+                                        b=p_4
+                            .row.mt-2.text-center
+                                p Más en
+                                    a=seccion
+
 
                     mixin titulos(titulo)
                         // Titulos de secciones
                         .titulo
-                            p=titulo
+                            H3=titulo
                     
                     mixin img_text_ab(img_fondo,texto_foto)
                         //Especiales  
-                        .imagenes_text_ab
-                            img(src=img_fondo)
-                            p=texto_foto
+                        .img-text-ab.p-rl.text-center
+                            img.img-100(src=img_fondo)
+                            p.p-ab.pd-2.mg-2.d-ib=texto_foto
 
                     mixin nuestros_blogueros(foto_bloguero,nombre_bloguero,ultimo_blog)
                         li
@@ -131,26 +137,26 @@ html(lang='es-PE')
                     +4img_4p("image/logo_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","image/img_aweita.jpg","Juan Roman Riquelme el adios al 'Ultimo 10' de Argentina","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Aweita.pe")
 
                     // FOTOS DESTACADAS
-                    +titulos("COLUMNISTAS")
+                    +titulos("FOTOS DESTACADAS")
                     .img-destacadas
-                        img(src="image/img_fotodes_prominent.jpg")
-                        H3 Líneas de Nasca:admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        img.img-100.img-responsive(src="image/img_fotodes_prominent.jpg")
+                        H3 Líneas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-                        .row
-                            .col-md-5
-                                img(src="image/img_fotodes.jpg")
-                            .col-md-7
+                        .row.mt-2
+                            .col-xs-5
+                                img.img-100.img-responsive(src="image/img_fotodes.jpg")
+                            .col-xs-7
                                 p Uchuraccay: El pueblo que recibe ocn flores a quienes llegan a pie |FOTOS
-
+                        hr
                     // ESPECIALES
                     +titulos("ESPECIALES")
                     +img_text_ab("image/img_especiales_aside.jpg","Règimen laboral juvenil")
