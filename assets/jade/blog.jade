@@ -9,9 +9,10 @@ html(lang='es-PE')
 		//CONTENIDO
 		.container
 			.row
-				.col-md-12
+				.col-md-12.blog-new
 					h1 <strong> Blogs</strong>
-					h4 LO ULTIMO EN BLOGS
+					h4.d-ib LO ULTIMO EN BLOGS
+					img.d-ib(src="image/double-arrow-bottom.png")
 			mixin Blog
 				.row
 					mixin Blogfila(fecha,titulo,imagen,blog,nombre)

@@ -141,6 +141,15 @@ button {
   margin-top: 10px;
 }
 
+.blog-new > h4 {
+  color: "#aaa";
+  font-family: "oswald";
+}
+
+.blog-new > img {
+  margin: -0.8% auto auto 1%;
+}
+
 .blog {
   padding: 10px 20px;
 }
