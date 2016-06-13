@@ -37,19 +37,26 @@ body{font-family:$letra_body;}
 .titulares{
 	.grande{
 		padding-left: 0;
+		-webkit-filter: brightness(80%);
 	}
-	h4{
+	.texto-grande{
 		z-index: 1;
 		position: absolute;
 		bottom: 20px;
 		color: #fff;
 		font-weight: bold;
+		padding: 5px 20px;
 	}
 	.peques{
-		.flot-titu{
-			background-color: rgba(0, 0, 0, 0.5);
-			opacity: 2;
-
+		.texto{
+			-webkit-filter: brightness(80%);
+		}
+		.flot-texto{
+			z-index: 1;
+			position: absolute;
+			bottom: 30px;
+			font-weight: bold;
+			color: #fff;
 		}
 
 	}
@@ -78,6 +85,22 @@ body{font-family:$letra_body;}
 	img{
 		height: 100px;
 		margin: 20px 55px;
+	}
+}
+.bajo-colum{
+	text-align: center;
+	h4{
+		color: #BA1414;
+		font-weight: bold;
+	}
+		.otro{
+		border: 1px solid #aaa;
+		border-radius: 4px;
+		margin-top: 10px;
+	}
+	.banner-derecho{
+		max-height: 100%;
+		max-width: 100%;
 	}
 }
 // 2da parte
