@@ -1,7 +1,3 @@
-* {
-  outline: 1px solid red;
-}
-
 body {
   font-family: "PT Sans";
 }
@@ -283,4 +279,18 @@ button {
   bottom: 1%;
   font-weight: bold;
   background: #eee;
+}
+
+.titulo-secciones {
+  border-top: 5px solid gray;
+  margin: 15% auto;
+}
+
+.titulo-secciones h4 {
+  background: gray;
+  color: #FFF;
+  top: -12px;
+  left: 20%;
+  right: 20%;
+  font-family: "Oswald";
 }
