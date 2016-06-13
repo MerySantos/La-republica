@@ -10,35 +10,34 @@ $letra_news:
 $color_gray:"#aaa";
 
 
-.colum1{
+.blog{
 	padding: 10px 20px;
-	// border: 2px solid #aaa;
-	// margin-right: 10px;
 }
-.thumbnail{
-	border-radius: none;
-}
-.contenido-colum1{
+.contenido-blog{
 	height: 100px;
 	padding: 5px 10px;
 	text-align: justify;
 	margin-bottom: 50px;
 	p{
 		margin-top: 20px;
+		font-family: $letra_news;
 	}
 	h3{
 		margin-top: 15px;
+		font-family: $letra_news;
 	}
 }
-.cuadro-imagen{
+
+.columnistas h4{
+	font-family: $letra_news;
+}
+.abajo-imagen{
 	background-color: #E2E6E9;
 	height: 90px;
 	padding: 10px;
 }
 .all_columnistas h3{
-	font-family: $letra_news;
-}
-.all_columnistas 
+	font-family: $letra_news;}
 
 .bs-colum-list {
     padding-left: 0;
@@ -77,7 +76,6 @@ height: auto; padding-top: 10px; padding-bottom:10px;}
 	line-height: 0.7;}
 .autor2{
 	position: relative;}
-
 
 // FOOTER(R)
 	@import '../sass/import/footer';

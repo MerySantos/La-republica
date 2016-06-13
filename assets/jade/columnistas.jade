@@ -12,10 +12,11 @@ body
 			.row
 				.col-md-12
 					h1 <strong> Columnistas</strong>
-					h4 LO ULTIMO EN COLUMNISTAS
-			mixin a
+					h4.db-ib LO ULTIMO EN COLUMNISTAS
+					img.d-ib.img-responsive(src="image/double-arrow-bottom.png")
+			mixin Blog
 				.row
-					mixin afila(fecha,titulo,imagen,blog,nombre)
+					mixin Blogfila(fecha,titulo,imagen,blog,nombre)
 						.col-md-4
 							.blog.thumbnail
 								.contenido-blog
@@ -26,12 +27,13 @@ body
 										.ml-3.mt-3.pull-left
 										p=blog
 										p.strong=nombre
-				+afila("Lunes 14 de Julio de 2015","El gol de la muerte","image/blog_avatar_01.jpg","BLOG","LIBROS")
-				+afila("Lunes 14 de Julio de 2015","Dios ha muerto, tengo las manos cubiertas de sangre","image/blog_avatar_02.jpg","BLOG","Ya lo pasado, PASADO")
-				+afila("Lunes 14 de Julio de 2015","¿Cual es tu queso favorito?","image/blog_avatar_03.jpg","BLOG","Décimas cosas")
-			+a
-			+a
-			+a
+				+Blogfila("Lunes 14 de Julio de 2015","El gol de la muerte","image/blog_avatar_01.jpg","BLOG","LIBROS")
+				+Blogfila("Lunes 14 de Julio de 2015","Dios ha muerto, tengo las manos cubiertas de sangre","image/blog_avatar_02.jpg","BLOG","Ya lo pasado, PASADO")
+				+Blogfila("Lunes 14 de Julio de 2015","¿Cual es tu queso favorito?","image/blog_avatar_03.jpg","BLOG","Décimas cosas")
+			+Blog
+			+Blog
+			+Blog
+			+Blog
 
 	//ALL COLUMNISTAS
 	.all_columnistas
@@ -79,8 +81,7 @@ body
 								.autor2.text-left.d-ib
 									p.nombre.bold Humberto Campedonico
 									h4 Actualidad
-									h4 Económica-Oscar
-									h4 Dancourt
+								
 							li.back
 								img.img-thumbnail.img-responsive.d-ib(src="image/img_author_columnista.jpg")
 								.autor.text-left.d-ib

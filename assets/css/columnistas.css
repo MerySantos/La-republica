@@ -144,30 +144,32 @@ button {
   margin-top: 10px;
 }
 
-.colum1 {
+.blog {
   padding: 10px 20px;
 }
 
-.thumbnail {
-  border-radius: none;
-}
-
-.contenido-colum1 {
+.contenido-blog {
   height: 100px;
   padding: 5px 10px;
   text-align: justify;
   margin-bottom: 50px;
 }
 
-.contenido-colum1 p {
+.contenido-blog p {
   margin-top: 20px;
+  font-family: "oswald";
 }
 
-.contenido-colum1 h3 {
+.contenido-blog h3 {
   margin-top: 15px;
+  font-family: "oswald";
 }
 
-.cuadro-imagen {
+.columnistas h4 {
+  font-family: "oswald";
+}
+
+.abajo-imagen {
   background-color: #E2E6E9;
   height: 90px;
   padding: 10px;
@@ -177,7 +179,6 @@ button {
   font-family: "oswald";
 }
 
-.all_columnistas
 .bs-colum-list {
   padding-left: 0;
   list-style: none;
