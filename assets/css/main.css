@@ -1,5 +1,5 @@
-* {
-  outline: 1px solid red;
+body {
+  font-family: "PT Sans";
 }
 
 a {
@@ -162,4 +162,25 @@ button {
 .maestria {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.news > h4 {
+  color: #aaa;
+  font-family: "Oswald";
+}
+
+.news > img {
+  margin: -0.8% auto auto 1%;
+}
+
+.news .list-news > h4 {
+  font-weight: bold;
+}
+
+.news .list-news > p {
+  font-size: 12px;
+}
+
+.news .list-news hr {
+  border: 0.8px solid #eee;
 }

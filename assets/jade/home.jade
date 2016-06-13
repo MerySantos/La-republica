@@ -16,29 +16,30 @@ html(lang='es-PE')
         .container
             .row
                 //ULTIMAS NOTICIAS
-                .col-md-8
+                .col-md-8.news
                     //Declarar mixins
                     mixin list-news(tiempo,titular,img,description,comment,seccion,media)
-                        li
+                        li.list-news.mt-2
                             p=tiempo 
                             h4=titular
-                            .row
+                            .row.mt-2
                                 .col-md-4
-                                    img(src=img)
+                                    img.img-100.img-responsive(src=img)
                                 .col-md-8
                                     p=description
-                                    img.d-ib(src="image/social_sprite.png")
-                                    img.d-ib(src="image/bullet.gif")
-                                    img.d-ib(src="image/ico_comment.png") 
-                                    p.d-ib=comment
-                                    img.d-ib(src="image/bullet.gif")
-                                    a.d-ib=seccion
-                                    img.d-ib(src="image/bullet.gif")
-                                    i.d-ib.fa&attributes(attributes)
+                                    .media
+                                        img.d-ib.mr-4(src="image/social_sprite.png")
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        img.d-ib(src="image/ico_comment.png") 
+                                        p.mr-4.d-ib=comment
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        a.mr-4.d-ib=seccion
+                                        img.d-ib.mr-4(src="image/bullet.gif")
+                                        i.d-ib.fa&attributes(attributes)
+                            hr.mt-2
 
-                    H4 ULTIMAS NOTICIAS
-                    i
-                        img(src="image/double-arrow-bottom.png")
+                    H4.d-ib ULTIMAS NOTICIAS
+                    img.d-ib(src="image/double-arrow-bottom.png")
                     
                     mixin rep-list-news
                         +list-news("Hace 1 hora 12 mins","Emma Watson protagonizara'La bella y la bestia' I Video","image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-youtube-play")  
