@@ -144,6 +144,35 @@ button {
   margin-top: 10px;
 }
 
+.colum1 {
+  padding: 10px 20px;
+}
+
+.thumbnail {
+  border-radius: none;
+}
+
+.contenido-colum1 {
+  height: 100px;
+  padding: 5px 10px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.contenido-colum1 p {
+  margin-top: 20px;
+}
+
+.contenido-colum1 h3 {
+  margin-top: 15px;
+}
+
+.cuadro-imagen {
+  background-color: #E2E6E9;
+  height: 90px;
+  padding: 10px;
+}
+
 .all_columnistas h3 {
   font-family: "oswald";
 }
