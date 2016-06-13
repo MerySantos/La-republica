@@ -1,11 +1,49 @@
 doctype html
 html(lang='es-PE')
-  head
-    include ./include/head.jade
-    link(rel='stylesheet', type='text/css', href='assets/css/columnistas.css')
-  body
-    //header
-    include ./include/header.jade
-    
-    // FOOTER(R)
-    include ./include/footer.jade
+	head
+	include ./include/head.jade
+	link(rel='stylesheet', type='text/css', href='css/columnistas.css')
+body
+	//header
+	include ./include/header.jade
+	//COLUMNISTAS
+	.columnistas
+		.container
+		mixin a(fecha,titulo,imagen)
+			.row.first
+				.col-md-12
+					.col-md-4.bordes
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 El gol de la muerte
+							.well.foto-colum.d-ib
+								img( src="image/img_author_columnista.jpg")
+								ul.d-ib.list-unstyled
+									li
+										h6 Augusto Alvarez Rodrich
+									li 
+										h5 Observador
+					.col-md-4.bordes
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 Dios ha muerto tengo las manos cubiertas de sangre
+							.well.foto-colum.list-inline
+								img( src="image/colum-astreto.jpg")
+								h6 Mirko 
+								h5 Observador
+					.col-md-4.bordes
+						.cuadro-colum.text-center
+							p Lunes,14 de Julio de 2015
+							h4 ¿Cual es tu queso favorito?
+							.well.foto-colum.list-inline
+								img( src="image/colum_camilo.jpg")
+								h6 Aldo Miyashiro
+								h5 Chino de mi Barrio
+		+a
+		+a
+		+a
+				
+
+	//ALL COLUMNISTAS
+	// FOOTER(R)
+	include ./include/footer.jade

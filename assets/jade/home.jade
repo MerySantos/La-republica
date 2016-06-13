@@ -2,6 +2,9 @@ doctype html
 html(lang='es-PE')
   head
     include ./include/head.jade
+    append title
+    title Ho
+
     link(rel='stylesheet', type='text/css', href='css/main.css')
   body
     //header
@@ -19,18 +22,19 @@ html(lang='es-PE')
                         li
                             p=tiempo 
                             h4=titular
-                            .col-md-4
-                                img(src=img)
-                            .col-md-8
-                                p=description
-                                img.d-ib(src="image/social_sprite.png")
-                                img.d-ib(src="image/bullet.gif")
-                                img.d-ib(src="image/ico_comment.png") 
-                                p.d-ib=comment
-                                img.d-ib(src="image/bullet.gif")
-                                a.d-ib=seccion
-                                img.d-ib(src="image/bullet.gif")
-                                i.d-ib.fa&attributes(attributes)
+                            .row
+                                .col-md-4
+                                    img(src=img)
+                                .col-md-8
+                                    p=description
+                                    img.d-ib(src="image/social_sprite.png")
+                                    img.d-ib(src="image/bullet.gif")
+                                    img.d-ib(src="image/ico_comment.png") 
+                                    p.d-ib=comment
+                                    img.d-ib(src="image/bullet.gif")
+                                    a.d-ib=seccion
+                                    img.d-ib(src="image/bullet.gif")
+                                    i.d-ib.fa&attributes(attributes)
 
                     H4 ULTIMAS NOTICIAS
                     i
@@ -44,13 +48,16 @@ html(lang='es-PE')
                         +list-news("Hace 1 hora 12 mins","YOUTUBE:hombre finge ahogarse y su perro lo rescata | FOTOS","image/img_news3.png","La actriz Emma Watson fue confirmada por Disney como la protagonista de la Bella y la bestia en la version de carne y hueso.","10","ESPECTÁCULOS")(class="fa-camera")
 
                         +list-news("Hace 1 hora 12 mins","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atletico de Madrid","image/img_news4.png","Despues de la pesima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido de cuadro madrídista contra el Córdoba, el Comité de Competicion ha llegado a la ...","0","AREQUIPA")(class="D-NONE")
-                    ul
+                    ul.list-unstyled
                         +rep-list-news
                         +rep-list-news
                         +rep-list-news
                         +rep-list-news
                         +rep-list-news
                         +rep-list-news
+                        +rep-list-news
+                        +list-news("Hace 1 hora 12 mins","Roque Benavides respalda proyecto Tia Maria y espera que Conga se socialice","image/img_news2.png","Zenaida Condori Contreras Arequipa para el presidente de la Compañia de Minas Buenaventura,Roque Benavides, el proyecto Tia Maria, que promueve Southern Peru, ya debe...","0","AREQUIPA")(class="D-NONE")
+
 
                 .col-md-4
                     //Declarar mixins ()
@@ -63,7 +70,7 @@ html(lang='es-PE')
                                 if block
                                     block
                                 else
-                                    p a
+                                    p ...
 
                     mixin 4img_4p(img_superior,img_1,img_2,img_3,img_4,p_1,p_2,p_3,p_4,seccion)
                         //aweita
@@ -158,9 +165,84 @@ html(lang='es-PE')
                     // NUESTROS BLOGGEROS
                     +titulos("NUESTROS BLOGUEROS")
                     ul.list-unstyled
-                        +nuestros_blogueros("image/img_carlincatura_sd.jpg","Augusto Álvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
-                    
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                        +nuestros_blogueros("image/img_blogueros.jpg","Augusto Álvarez Rodrich","Charlie Hebdo","historia que no debe repetirse")
+                    a Todos los blogs
 
+                    // EDICION IMPRESA
+                    +titulos("EDICION IMPPRESA")
+                    ul.list-unstyled
+                        li
+                            .row
+                                .col-md-5
+                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                .col-md-7
+                                    h4 Extorsionan menores en colegios
+                                    a(href="#") La República-Norte
+                        li
+                            .row
+                                .col-md-5
+                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                .col-md-7
+                                    h4 Extorsionan menores en colegios
+                                    a(href="#") La República-Norte
+                        li
+                            .row
+                                .col-md-5
+                                    img.img-100.img-responsive(src="image/img_impreso_sd.jpg")
+                                .col-md-7
+                                    h4 Extorsionan menores en colegios
+                                    a(href="#") La República-Norte
+
+                    // Infografia
+                    +titulos("INFOGRAFÍAS")
+                    +img_text_ab("image/img_especiales_aside.jpg","Historico cierre de frontera")
+                    +img_text_ab("image/img_especiales_aside.jpg","Historico cierre de frontera")
+
+
+                    // PREGUNTAS (L)
+                    +trama("image/img_pregunta.png","La pregunta de hoy")
+                        p ¿Cree usted que la premier Ana Jara debe renunciar?
+                        input(type="radio")
+                        | Si 
+                        input(type="radio")
+                        | No
+                        
+                        button Votar
+                        a Ver Resultados
+
+                    +trama("","La pregunta de ayer")
+                        p ¿Cree usted que se militarizó la conmemoración de la Haya en Lima?
+                        .progress
+                            .progress-bar.progress-bar-success(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 55%") 55%
+                                span.sr-only 55%
+                        .progress
+                            .progress-bar.progress-bar-danger(aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 25%") 25%
+                                span.sr-only 25%
+                        a Ver Preguntas Pasadas
+
+                    // LIBERO.PE (x)
+                    +4img_4p("image/logo_libero.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","image/img_video_destacado.jpg","Fiorentina empató 1-1 en su vida al Genoa con gran actuacion de Juan Vargas[VIDEO]","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Libero.pe")
+                    
+                    // POPULAR (x)
+                    +4img_4p("image/logo_popular.jpg","image/img_news.jpg","image/img_news.jpg","image/img_news.jpg","image/img_news.jpg","Joshua Ivanoff esta loco por olor de Meliza Loza","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Popular.pe")
+
+
+                    // WAPA(x)
+                    +4img_4p("image/logo_wapa.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","image/sociedad-image--thumb-01.jpg","Como renovar el guardarropa de los mas pequeños en este verano","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","dsjbfkjdsbfjksdbfjks","Wapa.pe")
+
+                    // REPORTERO CIUDADANO (L)
+                    +trama("image/img_reporteroc.png","Reportero ciudadano")
+                        img.img-responsive.img-100(src="image/img_sd_reporteroc.jpg")
+                        h4 Estacionamiento indebido
+                        p ¿Esta permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa Placa DG623, eso que antes lo dejaba entre la vereda y mi puerta?
+                        button ENVIAR FOTOS
+                        a Mas fotos
+                              
 
     // SUSCRIBETE BOLETIN (L)
         //- L = fondo, imagen superior, div blanco, titulo
