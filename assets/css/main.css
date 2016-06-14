@@ -288,7 +288,12 @@ button {
   border: 0.8px solid #eee;
 }
 
+.suscribirse input {
+  width: 80%;
+}
+
 .suscribirse button {
+  width: 80%;
   background: #BA1414;
   color: #FFF;
   margin: 3% auto;
@@ -346,6 +351,7 @@ button {
   left: 20%;
   right: 20%;
   font-family: "Oswald";
+  font-size: 1.5em;
 }
 
 .nuestros-blogueros a {
@@ -354,6 +360,7 @@ button {
 }
 
 .nuestros-blogueros p {
+  font-size: 1em;
   font-weight: bold;
 }
 
